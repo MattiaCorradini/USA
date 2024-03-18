@@ -1,5 +1,3 @@
-let cook = document.getElementById('year');
-
 let maxBounds = [
     [5.499550, -167.276413],
     [83.162102, -52.233040]
@@ -58,7 +56,7 @@ function onEachFeature(feature, layer) {
     });
 }
 
-fetch('./states.json')
+fetch('./data/states.json')
     .then((response) => response.json())
     .then((geojsonFeature) => {
         geojsonFeature['features'] = geojsonFeature['features'].filter(val => republicans.includes(val['properties']['name'].toUpperCase()));
@@ -68,7 +66,7 @@ fetch('./states.json')
         }).addTo(map);
     });
 
-fetch('./states.json')
+fetch('./data/states.json')
     .then((response) => response.json())
     .then((geojsonFeature) => {
         geojsonFeature['features'] = geojsonFeature['features'].filter(val => democrats.includes(val['properties']['name'].toUpperCase()));

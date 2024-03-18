@@ -43,6 +43,6 @@
     </div>
 </div>
 <a href="index.php">HOME</a>
-<script src="main.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

@@ -4,8 +4,6 @@
     require_once 'conf/config.php';
     $template = new League\Plates\Engine('templates', 'tpl');
 
-
-
     if (isset($_GET['map'])){
         $data = Model\ElectionRepository::getParty($_GET['year'] ?? 1976);
         $republicans = [];

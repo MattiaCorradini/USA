@@ -5,8 +5,7 @@
     <title><?= $state ?></title>
 </head>
 <body>
-<?= $state ?>
-
+<?= $state ?><br>
 <a href="index.php">MAP</a>
 </body>
 </html>
