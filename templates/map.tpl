@@ -31,7 +31,7 @@
     <div class="flex justify-between">
         <ul>
             <?php foreach ($years as $a): ?>
-                <li><a href="index.php?map=true&year=<?= $a[0] ?>"><?= $a[0] ?></a></li>
+                <li><a href="index.php?map&year=<?= $a[0] ?>"><?= $a[0] ?></a></li>
             <?php endforeach;?>
         </ul>
         <ul>
@@ -42,6 +42,7 @@
         <div id="map"></div>
     </div>
 </div>
+<a href="index.php">HOME</a>
 <script src="main.js"></script>
 </body>
 </html>

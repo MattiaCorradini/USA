@@ -6,9 +6,10 @@ let maxBounds = [
 ];
 
 let map = L.map('map').setView([39.099724,  -94.578331], 3.5);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
+    minZoom: 0,
+    maxZoom: 20,
+    ext: 'png'
 }).addTo(map);
 
 map.setMaxBounds(maxBounds);
@@ -35,20 +36,48 @@ let democratsStyle = {
     "opacity": 0.65
 };
 
+// fetch('./states.json')
+//     .then((response) => response.json())
+//     .then((geojsonFeature) => {
+//         geojsonFeature['features'] = geojsonFeature['features'].filter(val => republicans.includes(val['properties']['name'].toUpperCase()));
+//         console.log(geojsonFeature['features'][0]['properties']['name'].toUpperCase())
+//         L.geoJSON(geojsonFeature, {style: republicansStyle}).addTo(map);
+//     });
+//
+// fetch('./states.json')
+//     .then((response) => response.json())
+//     .then((geojsonFeature) => {
+//         geojsonFeature['features'] = geojsonFeature['features'].filter(val => democrats.includes(val['properties']['name'].toUpperCase()));
+//         L.geoJSON(geojsonFeature, {style: democratsStyle}).addTo(map);
+//     });
+
+// Aggiungi un gestore di eventi clic per i poligoni
+function onEachFeature(feature, layer) {
+    layer.on('click', function (e) {
+        window.location.replace(`index.php?state=${feature.properties.name}`);
+    });
+}
+
 fetch('./states.json')
     .then((response) => response.json())
     .then((geojsonFeature) => {
         geojsonFeature['features'] = geojsonFeature['features'].filter(val => republicans.includes(val['properties']['name'].toUpperCase()));
-        console.log(geojsonFeature['features'][0]['properties']['name'].toUpperCase())
-        L.geoJSON(geojsonFeature, {style: republicansStyle}).addTo(map);
+        L.geoJSON(geojsonFeature, {
+            style: republicansStyle,
+            onEachFeature: onEachFeature // Aggiungi il gestore di eventi clic
+        }).addTo(map);
     });
 
 fetch('./states.json')
     .then((response) => response.json())
     .then((geojsonFeature) => {
         geojsonFeature['features'] = geojsonFeature['features'].filter(val => democrats.includes(val['properties']['name'].toUpperCase()));
-        L.geoJSON(geojsonFeature, {style: democratsStyle}).addTo(map);
+        L.geoJSON(geojsonFeature, {
+            style: democratsStyle,
+            onEachFeature: onEachFeature // Aggiungi il gestore di eventi clic
+        }).addTo(map);
     });
+
 
 // tabItems.forEach(tabItem => {
 //     tabItem.addEventListener('click', () => {

@@ -6,7 +6,7 @@
 
 
 
-    if (isset($_GET['map']) && $_GET['map']){
+    if (isset($_GET['map'])){
         $data = Model\ElectionRepository::getParty($_GET['year'] ?? 1976);
         $republicans = [];
         $democrats = [];
@@ -31,6 +31,11 @@
             'year'=>$_GET['year'] ?? 1976,
             'years'=>$years,
             'election_info'=>$election_info
+        ]);
+    }
+    else if (isset($_GET['state'])){
+        echo $template->render('state', [
+            'state'=>$_GET['state']
         ]);
     }
     else
