@@ -7,7 +7,7 @@
 
 
     if (isset($_GET['map']) && $_GET['map']){
-        $data = Model\ElectionRepository::listAll($_GET['year'] ?? 1976);
+        $data = Model\ElectionRepository::getParty($_GET['year'] ?? 1976);
         $republicans = [];
         $democrats = [];
         foreach ($data as $state){
@@ -25,8 +25,12 @@
         $fp = fopen($path, 'w');
         fwrite($fp, $jsonString);
         fclose($fp);
+        $years = \Model\ElectionRepository::getYears();
+        $election_info = \Model\ElectionRepository::getParties($_GET['year'] ?? 1976);
         echo $template->render('map', [
-            'year'=>$_GET['year'] ?? 1976
+            'year'=>$_GET['year'] ?? 1976,
+            'years'=>$years,
+            'election_info'=>$election_info
         ]);
     }
     else

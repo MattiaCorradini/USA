@@ -27,15 +27,20 @@
 </head>
 <body>
 <div class="cont">
-<h1><?= $year ?> Election</h1>
-<div id="map">
-</div>
-    <select class="select select-bordered w-full max-w-xs" id="year">
-        <?php
-       for ($year = 1976; $year <= 2020; $year+=4): ?>
-            <option value="<?=$year;?>"><?=$year;?></option>
-        <?php endfor; ?>
-    </select>
+    <h1><?= $year ?> Election</h1>
+    <div class="flex justify-between">
+        <ul>
+            <?php foreach ($years as $a): ?>
+                <li><a href="index.php?map=true&year=<?= $a[0] ?>"><?= $a[0] ?></a></li>
+            <?php endforeach;?>
+        </ul>
+        <ul>
+            <?php foreach ($election_info as $a): ?>
+                <li><?= $a['party_detailed'] == '' ? 'WRITEIN' : $a['party_detailed'] ?> : <?= $a['votes'] ?></li>
+            <?php endforeach;?>
+        </ul>
+        <div id="map"></div>
+    </div>
 </div>
 <script src="main.js"></script>
 </body>
