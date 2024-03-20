@@ -31,14 +31,31 @@
     <div class="flex justify-between">
         <ul>
             <?php foreach ($years as $a): ?>
-                <li><a href="index.php?map&year=<?= $a[0] ?>"><?= $a[0] ?></a></li>
+            <li><a href="index.php?map&year=<?= $a[0] ?>"><?= $a[0] ?></a></li>
             <?php endforeach;?>
         </ul>
-        <ul>
-            <?php foreach ($election_info as $a): ?>
-                <li><?= $a['party_detailed'] == '' ? 'WRITEIN' : $a['party_detailed'] ?> : <?= $a['votes'] ?></li>
-            <?php endforeach;?>
-        </ul>
+        <div  class="flex flex-col justify-between w-96 h-48"> <!-- class="flex flex-row justify-between w-96" -->
+            <div class="flex flex-row justify-between w-96">
+                    <?php foreach ($election_votes as $a): ?>
+                    <span><?= $a['party_detailed'] == '' ? 'WRITEIN' : $a['party_detailed'] ?></span>
+                    <?php endforeach;?>
+            </div>
+
+            <div class="flex flex-row justify-between w-96">
+                    <?php foreach ($percentage as $a): ?>
+                    <div class="radial-progress" style="--value: <?= $a ?>;" role="progressbar"> <?= $a ?>% </div>
+                    <?php endforeach;?>
+            </div>
+
+            <div>
+                <p>
+                    Winner: <?= $winner['name'] ?> <br>
+                    Party: <?= $winner['party'] ?>
+                </p>
+            </div>
+
+        </div>
+
         <div id="map"></div>
     </div>
 </div>

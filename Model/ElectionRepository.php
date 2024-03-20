@@ -37,7 +37,39 @@ class ElectionRepository {
                                       ON vote.id_election = election.id
                   WHERE election.year = :year
                   GROUP BY party.party_detailed) as a
-            ORDER BY votes DESC';
+            ORDER BY votes DESC
+            LIMIT 2';
+        $result = $pdo->prepare($sql);
+        $result->execute([
+            'year'=>$year
+        ]);
+        return $result->fetchAll();
+    }
+
+    public static function getVotes($year): array{
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT SUM(candidatevotes)
+                FROM vote
+                INNER JOIN election
+                ON vote.id_election = election.id
+                WHERE year = :year;';
+        $result = $pdo->prepare($sql);
+        $result->execute([
+            'year'=>$year
+        ]);
+        return $result->fetchAll();
+    }
+
+    public static function getOtherVotes($year): array{
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT SUM(candidatevotes) as votes
+                FROM (SELECT candidatevotes
+                      FROM vote
+                      INNER JOIN election
+                      ON vote.id_election = election.id
+                      INNER JOIN party
+                      ON vote.id_party = party.id
+                      WHERE year = :year AND party_detailed != \'REPUBLICAN\' AND party_detailed != \'DEMOCRAT\')  as A';
         $result = $pdo->prepare($sql);
         $result->execute([
             'year'=>$year

@@ -59,18 +59,13 @@ function onEachFeature(feature, layer) {
 fetch('./data/states.json')
     .then((response) => response.json())
     .then((geojsonFeature) => {
-        geojsonFeature['features'] = geojsonFeature['features'].filter(val => republicans.includes(val['properties']['name'].toUpperCase()));
-        L.geoJSON(geojsonFeature, {
+        let geojsonFeatureRepublicans = geojsonFeature['features'].filter(val => republicans.includes(val['properties']['name'].toUpperCase()));
+        let geojsonFeatureDemocrats = geojsonFeature['features'].filter(val => democrats.includes(val['properties']['name'].toUpperCase()));
+        L.geoJSON(geojsonFeatureRepublicans, {
             style: republicansStyle,
             onEachFeature: onEachFeature // Aggiungi il gestore di eventi clic
         }).addTo(map);
-    });
-
-fetch('./data/states.json')
-    .then((response) => response.json())
-    .then((geojsonFeature) => {
-        geojsonFeature['features'] = geojsonFeature['features'].filter(val => democrats.includes(val['properties']['name'].toUpperCase()));
-        L.geoJSON(geojsonFeature, {
+        L.geoJSON(geojsonFeatureDemocrats, {
             style: democratsStyle,
             onEachFeature: onEachFeature // Aggiungi il gestore di eventi clic
         }).addTo(map);
