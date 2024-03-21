@@ -11,11 +11,15 @@
 
 <body>
 <div class="all">
-    <div class="navbar">
-        <a href="index.php?map=true"> <img src="img/img_4.png" class="icon"> </a>
-        <a href="#home">
-            <h1>US ELECTION</h1>
-        </a>
+    <div class="nav navbar bg-base-100 fixed">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl" href="index.php?map=true">US ELECTION</a>
+        </div>
+        <div class="flex-none">
+            <button class="btn btn-square btn-ghost">
+                <a href="index.php?map=true"><img src="img/img_4.png" class="icon"></a>
+            </button>
+        </div>
     </div>
 
     <div class="section uno bianco" id="home">

@@ -54,11 +54,10 @@ h1 {
 }
 
 .icon {
-    width: 100px;
+    width: 65px;
 }
 
-.navbar {
-    position: fixed;
+.nav {
     display: flex;
     justify-content: space-around;
 }

@@ -26,40 +26,53 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<div class="cont">
-    <h1><?= $year ?> Election</h1>
-    <div class="flex justify-between">
-        <ul>
-            <?php foreach ($years as $a): ?>
-            <li><a href="index.php?map&year=<?= $a[0] ?>"><?= $a[0] ?></a></li>
-            <?php endforeach;?>
-        </ul>
-        <div  class="flex flex-col justify-between w-96 h-48"> <!-- class="flex flex-row justify-between w-96" -->
-            <div class="flex flex-row justify-between w-96">
-                    <?php foreach ($election_votes as $a): ?>
-                    <span><?= $a['party_detailed'] == '' ? 'WRITEIN' : $a['party_detailed'] ?></span>
-                    <?php endforeach;?>
-            </div>
-
-            <div class="flex flex-row justify-between w-96">
-                    <?php foreach ($percentage as $a): ?>
-                    <div class="radial-progress" style="--value: <?= $a ?>;" role="progressbar"> <?= $a ?>% </div>
-                    <?php endforeach;?>
-            </div>
-
-            <div>
-                <p>
-                    Winner: <?= $winner['name'] ?> <br>
-                    Party: <?= $winner['party'] ?>
-                </p>
-            </div>
-
+<div class="flex flex-col">
+    <div class="nav navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl" href="index.php?map=true">US ELECTION</a>
         </div>
+        <div class="flex-none">
+            <button class="btn btn-square btn-ghost">
+                <a href="index.php?map=true"><img src="img/img_4.png" class="icon"></a>
+            </button>
+        </div>
+    </div>
+    <div class="cont">
+        <h1><?= $year ?> Election</h1>
+        <div class="flex justify-evenly">
+            <div class="flex flex-col justify-between">
+                <div  class="flex flex-col justify-between w-96 h-48"> <!-- class="flex flex-row justify-between w-96" -->
+                    <div class="flex flex-row justify-between w-96">
+                            <?php foreach ($election_votes as $a): ?>
+                            <span><?= $a['party_detailed'] == '' ? 'WRITEIN' : $a['party_detailed'] ?></span>
+                            <?php endforeach;?>
+                    </div>
 
-        <div id="map"></div>
+                    <div class="flex flex-row justify-between w-96">
+                            <?php foreach ($percentage as $a): ?>
+                            <div class="radial-progress" style="--value: <?= $a ?>;" role="progressbar"> <?= $a ?>% </div>
+                            <?php endforeach;?>
+                    </div>
+
+                    <div>
+                        <p>
+                            Winner: <?= $winner['name'] ?> <br>
+                            Party: <?= $winner['party'] ?>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                    <?php foreach ($years as $a): ?>
+                    <a href="index.php?map&year=<?= $a[0] ?>"><?= $a[0] ?></a>
+                    <?php endforeach;?>
+                </div>
+            </div>
+
+            <div id="map"></div>
+        </div>
     </div>
 </div>
-<a href="index.php">HOME</a>
 <script src="scripts/main.js"></script>
 </body>
 </html>
