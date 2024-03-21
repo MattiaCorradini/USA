@@ -6,7 +6,9 @@
     },
     {
       "name": "Alaska",
-      "information": ""
+      "ist": "03/01/1959",
+      "cap": "Juneau",
+      "sto": "The history of Alaska dates back to ancient times when indigenous peoples migrated from Asia to North America through the Bering Strait during the Ice Ages. These early inhabitants, including ancestors of various Native American tribes, utilized the Bering land bridge as sea levels dropped due to glaciation. Later, populations like the Inuit and Aleutians migrated to Alaska from Asia, likely by sea. In the 18th century, Danish explorer Vitus Bering, under the Russian Empire, became the first European to reach Alaska. Spanish interest in Alaska led to exploratory voyages, including one by Italian navigator Alessandro Malaspina in the late 1700s, seeking a northwest passage. Malaspina's expedition, conducted for Spain, produced extensive geographic, ethnographic, botanical, and anthropological data, yet much of it remains unpublished. Overall, Alaska's history illustrates continuous human migration and exploration, bridging the continents of Asia and North America."
     },
     {
       "name": "Arizona",

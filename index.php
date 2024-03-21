@@ -20,7 +20,7 @@
     ];
 
 
-    if (isset($_GET['map'])){
+    if (isset($_GET['map']) || $_GET['stay']){
         $year = $_GET['year'] ?? 1976;
         $data = Model\ElectionRepository::getParty($year);
         $republicans = [];
@@ -58,8 +58,20 @@
         ]);
     }
     else if (isset($_GET['state'])){
+        $json_string = file_get_contents('data/info.json');
+        $data = json_decode($json_string, true);
+        $informazioni[] = "";
+        foreach ($data['features'] as $feature) {
+            if ($feature['name'] === $_GET['state']) {
+                $informazioni['name'] = $feature['name'];
+                $informazioni['ist'] = $feature['ist'];
+                $informazioni['cap'] = $feature['cap'];
+                $informazioni['sto'] = $feature['sto'];
+                break;
+            }
+        }
         echo $template->render('state', [
-            'state'=>$_GET['state']
+            'state'=>$informazioni
         ]);
     }
     else
