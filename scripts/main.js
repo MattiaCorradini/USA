@@ -54,6 +54,9 @@ function onEachFeature(feature, layer) {
     layer.on('click', function (e) {
         window.location.replace(`index.php?state=${feature.properties.name}`);
     });
+    layer.on('mouseover', function (a){
+        layer.bindPopup(feature.properties.name).openPopup();
+    });
 }
 
 fetch('./data/states.json')
@@ -70,6 +73,11 @@ fetch('./data/states.json')
             onEachFeature: onEachFeature // Aggiungi il gestore di eventi clic
         }).addTo(map);
     });
+
+let qualcosa = document.getElementsByClassName("leaflet-bottom leaflet-right")
+for (let aa of qualcosa){
+    aa.remove()
+}
 
 
 // tabItems.forEach(tabItem => {

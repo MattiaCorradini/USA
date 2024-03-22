@@ -20,7 +20,7 @@
     ];
 
 
-    if (isset($_GET['map']) || $_GET['stay']){
+    if (isset($_GET['map'])){
         $year = $_GET['year'] ?? 1976;
         $data = Model\ElectionRepository::getParty($year);
         $republicans = [];
@@ -64,9 +64,9 @@
         foreach ($data['features'] as $feature) {
             if ($feature['name'] === $_GET['state']) {
                 $informazioni['name'] = $feature['name'];
-                $informazioni['ist'] = $feature['ist'];
-                $informazioni['cap'] = $feature['cap'];
-                $informazioni['sto'] = $feature['sto'];
+                $informazioni['ist'] = $feature['foundation'];
+                $informazioni['cap'] = $feature['capital'];
+                $informazioni['sto'] = $feature['history'];
                 break;
             }
         }

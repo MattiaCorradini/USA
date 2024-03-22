@@ -2,209 +2,315 @@
   "features": [
     {
       "name": "Alabama",
-      "information": ""
+      "foundation": "12/14/1819",
+      "capital": "Montgomery",
+      "history": "The history of Alabama spans millennia, with evidence of human habitation dating back thousands of years. Various Native American tribes, including the Cherokee, Creek, Choctaw, and Chickasaw, inhabited the region before European exploration and settlement. The Spanish were among the first Europeans to explore Alabama in the early 16th century, followed by the French in the 18th century. The region became part of the United States in 1819, and Alabama was admitted to the Union as the 22nd state. Throughout its history, Alabama has played a significant role in various periods, including the Civil War, Reconstruction, and the Civil Rights Movement, leaving a profound impact on its cultural and political landscape."
     },
     {
       "name": "Alaska",
-      "ist": "03/01/1959",
-      "cap": "Juneau",
-      "sto": "The history of Alaska dates back to ancient times when indigenous peoples migrated from Asia to North America through the Bering Strait during the Ice Ages. These early inhabitants, including ancestors of various Native American tribes, utilized the Bering land bridge as sea levels dropped due to glaciation. Later, populations like the Inuit and Aleutians migrated to Alaska from Asia, likely by sea. In the 18th century, Danish explorer Vitus Bering, under the Russian Empire, became the first European to reach Alaska. Spanish interest in Alaska led to exploratory voyages, including one by Italian navigator Alessandro Malaspina in the late 1700s, seeking a northwest passage. Malaspina's expedition, conducted for Spain, produced extensive geographic, ethnographic, botanical, and anthropological data, yet much of it remains unpublished. Overall, Alaska's history illustrates continuous human migration and exploration, bridging the continents of Asia and North America."
+      "foundation": "03/30/1867",
+      "capital": "Juneau",
+      "history": "Alaska's history dates back to ancient times when indigenous peoples migrated from Asia to North America through the Bering Strait. Russian explorers arrived in the 17th century, followed by Russian settlement and fur trading. In 1867, the United States purchased Alaska from Russia, known as the Alaska Purchase, expanding its territory westward. Alaska became the 49th state of the United States on January 3, 1959. Its history is marked by a rich cultural heritage of Native Alaskan peoples, Russian influence, and frontier exploration."
     },
     {
       "name": "Arizona",
-      "information": ""
+      "foundation": "02/14/1912",
+      "capital": "Phoenix",
+      "history": "Arizona's history includes the early civilizations of Native American tribes such as the Hohokam, Ancestral Puebloans, and Navajo, who inhabited the region for thousands of years. Spanish explorers arrived in the 16th century, followed by American settlers in the 19th century. Arizona became the 48th state of the United States on February 14, 1912. The state has a rich cultural heritage, with influences from Native American, Hispanic, and Anglo-American cultures shaping its identity."
     },
     {
       "name": "Arkansas",
-      "information": ""
+      "foundation": "06/15/1836",
+      "capital": "Little Rock",
+      "history": "Arkansas has a diverse history, including the ancient civilizations of Native American tribes like the Caddo, Quapaw, and Osage. European exploration began in the 16th century, with French explorers establishing settlements in the region. Arkansas became a territory of the United States in 1819 and achieved statehood on June 15, 1836. The state played a significant role in the Civil War and the Civil Rights Movement, shaping its cultural and political landscape."
     },
     {
       "name": "California",
-      "information": ""
+      "foundation": "09/09/1850",
+      "capital": "Sacramento",
+      "history": "California's history is rich and diverse, beginning with indigenous peoples like the Chumash, Tongva, and Maidu. Spanish explorers arrived in the 16th century, followed by Mexican settlers in the 18th century. The California Gold Rush in the mid-19th century led to rapid population growth and statehood. California became the 31st state of the United States on September 9, 1850. It has played a significant role in American culture, economy, and politics."
     },
     {
       "name": "Colorado",
-      "information": ""
+      "foundation": "08/01/1876",
+      "capital": "Denver",
+      "history": "Colorado's history is marked by the ancient civilizations of Native American tribes such as the Ute, Arapaho, and Cheyenne. Spanish explorers arrived in the 16th century, followed by American pioneers and fur trappers. Colorado became the 38th state of the United States on August 1, 1876, during the Reconstruction Era following the Civil War. The state's history is intertwined with mining, ranching, and the exploration of the American West."
     },
     {
       "name": "Connecticut",
-      "information": ""
+      "foundation": "01/09/1788",
+      "capital": "Hartford",
+      "history": "Connecticut's history dates back to indigenous peoples like the Mohegan and Pequot tribes. Dutch and English settlers arrived in the 17th century, leading to conflicts with Native Americans. Connecticut was one of the original 13 colonies and played a crucial role in the American Revolutionary War. It ratified the United States Constitution on January 9, 1788, becoming the fifth state. Connecticut's history is marked by its industrialization, maritime trade, and contributions to American literature and politics."
     },
     {
       "name": "Delaware",
-      "information": ""
+      "foundation": "12/07/1787",
+      "capital": "Dover",
+      "history": "Delaware, known as 'The First State,' was one of the original 13 colonies. Its history dates back to indigenous peoples like the Lenape tribe. Dutch and Swedish settlers arrived in the early 17th century, followed by English colonization. Delaware played a crucial role in the American Revolutionary War and ratified the United States Constitution on December 7, 1787, becoming the first state to do so. The state's history is marked by its maritime trade, agriculture, and contributions to American politics."
     },
     {
       "name": "District of Columbia",
-      "information": ""
+      "foundation": "07/16/1790",
+      "capital": "Washington, D.C.",
+      "history": "The history of the District of Columbia, also known as Washington, D.C., begins with the signing of the Residence Act on July 16, 1790, which established a federal district for the nation's capital. The land chosen for the capital was donated by Maryland and Virginia and was situated along the Potomac River. The city of Washington was designed by Pierre Charles L'Enfant and later expanded under the supervision of architect Benjamin Banneker. Washington, D.C. was officially founded on September 9, 1791. The city was named in honor of George Washington, the first President of the United States and a key figure in the American Revolution. The District of Columbia became the permanent seat of the federal government in 1800. Over the centuries, Washington, D.C. has evolved into a diverse and vibrant city, serving as the political and cultural hub of the United States."
     },
     {
       "name": "Florida",
-      "information": ""
+      "foundation": "03/03/1845",
+      "capital": "Tallahassee",
+      "history": "Florida's history is diverse, with indigenous peoples like the Calusa, Timucua, and Seminole inhabiting the region for thousands of years. Spanish explorers arrived in the 16th century, followed by French and British colonization. Florida became a territory of the United States in 1821 and achieved statehood on March 3, 1845. The state's history is shaped by its diverse cultural heritage, including Native American, Spanish, African, and Caribbean influences."
     },
     {
       "name": "Georgia",
-      "information": ""
+      "foundation": "01/02/1788",
+      "capital": "Atlanta",
+      "history": "Georgia's history includes indigenous peoples like the Cherokee and Creek tribes, who inhabited the region for thousands of years. Spanish explorers arrived in the 16th century, followed by British colonization in the 18th century. Georgia was one of the original 13 colonies and ratified the United States Constitution on January 2, 1788, becoming the fourth state. The state played a significant role in the Civil War and the Civil Rights Movement."
     },
     {
       "name": "Hawaii",
-      "information": ""
+      "foundation": "08/21/1959",
+      "capital": "Honolulu",
+      "history": "Hawaii's history is shaped by Polynesian voyagers who arrived in the islands around 1,500 years ago. Captain James Cook's arrival in 1778 marked the beginning of European contact with Hawaii. In 1893, American plantation owners overthrew the Hawaiian monarchy, leading to U.S. annexation in 1898. Hawaii became the 50th state of the United States on August 21, 1959, after a referendum in which residents voted overwhelmingly in favor of statehood."
     },
     {
       "name": "Idaho",
-      "information": ""
+      "foundation": "07/03/1890",
+      "capital": "Boise",
+      "history": "Idaho's history is intertwined with the presence of indigenous peoples like the Nez Perce, Shoshone, and Bannock tribes. European exploration of the region began in the early 19th century, with fur traders and missionaries venturing into the area. Idaho became a territory of the United States in 1863 and achieved statehood on July 3, 1890. The state's history is marked by its mining industry, agriculture, and scenic landscapes."
     },
     {
       "name": "Illinois",
-      "information": ""
+      "foundation": "12/03/1818",
+      "capital": "Springfield",
+      "history": "Illinois has a rich history dating back to indigenous peoples like the Illiniwek and Miami tribes. French explorers Jacques Marquette and Louis Jolliet were among the first Europeans to explore the region in the 17th century. Illinois became the 21st state of the United States on December 3, 1818. The state played a crucial role in the American Civil War and has been a center of industry, agriculture, and transportation."
     },
     {
       "name": "Indiana",
-      "information": ""
+      "foundation": "12/11/1816",
+      "capital": "Indianapolis",
+      "history": "Indiana's history includes indigenous peoples like the Miami and Delaware tribes, who inhabited the region for thousands of years. French explorers arrived in the 17th century, followed by British colonization. Indiana became the 19th state of the United States on December 11, 1816. The state played a significant role in the Underground Railroad and the Civil War, and it has been known for its agriculture, manufacturing, and sports heritage."
     },
     {
       "name": "Iowa",
-      "information": ""
+      "foundation": "12/28/1846",
+      "capital": "Des Moines",
+      "history": "Iowa's history is marked by the presence of indigenous peoples like the Meskwaki and Sauk tribes. French explorers were among the first Europeans to explore the region in the 17th century. Iowa became the 29th state of the United States on December 28, 1846. The state played a significant role in the Civil War and has been known for its agriculture, particularly corn and soybean production."
     },
     {
       "name": "Kansas",
-      "information": ""
+      "foundation": "01/29/1861",
+      "capital": "Topeka",
+      "history": "Kansas's history includes indigenous peoples like the Kansa and Osage tribes, who inhabited the region for thousands of years. French explorers were among the first Europeans to explore the area in the 18th century. Kansas became the 34th state of the United States on January 29, 1861, just before the outbreak of the Civil War. The state played a pivotal role in the abolitionist movement and has been known for its agricultural and industrial development."
     },
     {
       "name": "Kentucky",
-      "information": ""
+      "foundation": "06/01/1792",
+      "capital": "Frankfort",
+      "history": "Kentucky's history dates back to indigenous peoples like the Cherokee and Shawnee tribes, who inhabited the region for thousands of years. European exploration of the area began in the 18th century, with Daniel Boone among the early settlers. Kentucky became the 15th state of the United States on June 1, 1792. The state played a crucial role in the American Civil War and has been known for its bourbon whiskey production, horse racing, and bluegrass music."
     },
     {
       "name": "Louisiana",
-      "information": ""
+      "foundation": "04/30/1812",
+      "capital": "Baton Rouge",
+      "history": "Louisiana's history is rich and diverse, with indigenous peoples like the Houma and Choctaw tribes inhabiting the region for thousands of years. French explorers led by René-Robert Cavelier, Sieur de La Salle, claimed the territory for France in the late 17th century. Louisiana became the 18th state of the United States on April 30, 1812. The state's history is influenced by French, Spanish, African, and Caribbean cultures, evident in its cuisine, music, and architecture."
     },
     {
       "name": "Maine",
-      "information": ""
+      "foundation": "03/15/1820",
+      "capital": "Augusta",
+      "history": "Maine's history is marked by indigenous peoples like the Abenaki and Penobscot tribes, who inhabited the region for thousands of years. European exploration of the area began in the 16th century, with French and English settlers establishing colonies. Maine became the 23rd state of the United States on March 15, 1820, as part of the Missouri Compromise, which admitted Maine as a free state and Missouri as a slave state, maintaining the balance between free and slave states in the Union."
     },
     {
       "name": "Maryland",
-      "information": ""
+      "foundation": "04/28/1788",
+      "capital": "Annapolis",
+      "history": "Maryland's history dates back to indigenous peoples like the Piscataway and Susquehannock tribes. European exploration of the region began in the early 17th century, with English settlers establishing the colony of Maryland in 1634. Maryland played a significant role in the American Revolutionary War and ratified the United States Constitution on April 28, 1788, becoming the seventh state. The state's history is marked by its contributions to American politics, industry, and culture."
     },
     {
       "name": "Massachusetts",
-      "information": ""
+      "foundation": "02/06/1788",
+      "capital": "Boston",
+      "history": "Massachusetts's history is rich and diverse, beginning with indigenous peoples like the Wampanoag and Massachusett tribes. English settlers arrived in the early 17th century, establishing the Plymouth and Massachusetts Bay colonies. Massachusetts played a crucial role in the American Revolutionary War and ratified the United States Constitution on February 6, 1788, becoming the sixth state. The state's history is marked by its contributions to American literature, education, and politics."
     },
     {
       "name": "Michigan",
-      "information": ""
+      "foundation": "01/26/1837",
+      "capital": "Lansing",
+      "history": "Michigan's history is shaped by indigenous peoples like the Ojibwe, Potawatomi, and Odawa tribes, who inhabited the region for thousands of years. French explorers arrived in the 17th century, followed by British colonization. Michigan became the 26th state of the United States on January 26, 1837. The state played a significant role in the American Civil War and has been known for its automotive industry, agriculture, and Great Lakes shipping."
     },
     {
       "name": "Minnesota",
-      "information": ""
+      "foundation": "05/11/1858",
+      "capital": "Saint Paul",
+      "history": "Minnesota's history is marked by indigenous peoples like the Dakota and Ojibwe tribes, who inhabited the region for thousands of years. French explorers were among the first Europeans to explore the area in the 17th century. Minnesota became the 32nd state of the United States on May 11, 1858. The state played a significant role in the Civil War and has been known for its timber, mining, and agriculture industries."
     },
     {
       "name": "Mississippi",
-      "information": ""
+      "foundation": "12/10/1817",
+      "capital": "Jackson",
+      "history": "Mississippi's history dates back to indigenous peoples like the Choctaw and Chickasaw tribes. Spanish explorers arrived in the region in the early 16th century, followed by French and British colonization. Mississippi became the 20th state of the United States on December 10, 1817. The state played a significant role in the Civil War and has been known for its agriculture, particularly cotton production, and its contributions to blues music."
     },
     {
       "name": "Missouri",
-      "information": ""
+      "foundation": "08/10/1821",
+      "capital": "Jefferson City",
+      "history": "Missouri's history is shaped by indigenous peoples like the Osage and Missouria tribes, who inhabited the region for thousands of years. French explorers were among the first Europeans to explore the area in the 17th century. Missouri became the 24th state of the United States on August 10, 1821. The state played a significant role in the American Civil War and has been known for its role in westward expansion, agriculture, and industry."
     },
     {
       "name": "Montana",
-      "information": ""
+      "foundation": "11/08/1889",
+      "capital": "Helena",
+      "history": "Montana's history is intertwined with the presence of indigenous peoples like the Blackfeet, Crow, and Salish tribes. European exploration of the region began in the early 19th century, with fur traders and explorers venturing into the area. Montana became a territory of the United States in 1864 and achieved statehood on November 8, 1889. The state's history is marked by its mining, ranching, and outdoor recreation industries."
     },
     {
       "name": "Nebraska",
-      "information": ""
+      "foundation": "03/01/1867",
+      "capital": "Lincoln",
+      "history": "Nebraska's history is marked by the presence of indigenous peoples like the Pawnee and Omaha tribes. French explorers were among the first Europeans to explore the region in the 18th century. Nebraska became the 37th state of the United States on March 1, 1867. The state played a significant role in westward expansion, agriculture, and the development of the transcontinental railroad."
     },
     {
       "name": "Nevada",
-      "information": ""
+      "foundation": "10/31/1864",
+      "capital": "Carson City",
+      "history": "Nevada's history is shaped by indigenous peoples like the Paiute and Shoshone tribes, who inhabited the region for thousands of years. European exploration of the area began in the early 19th century, with fur trappers and explorers venturing into the area. Nevada became the 36th state of the United States on October 31, 1864. The state's history is marked by the Comstock Lode silver rush and its association with gambling and entertainment."
     },
     {
       "name": "New Hampshire",
-      "information": ""
+      "foundation": "06/21/1788",
+      "capital": "Concord",
+      "history": "New Hampshire's history dates back to indigenous peoples like the Abenaki and Pennacook tribes. European exploration of the region began in the early 17th century, with English settlers establishing the colony of New Hampshire in 1623. New Hampshire played a significant role in the American Revolutionary War and ratified the United States Constitution on June 21, 1788, becoming the ninth state. The state's history is marked by its maritime heritage, granite quarrying, and contributions to American politics."
     },
     {
       "name": "New Jersey",
-      "information": ""
+      "foundation": "12/18/1787",
+      "capital": "Trenton",
+      "history": "New Jersey's history dates back to indigenous peoples like the Lenape and Munsee tribes. European exploration of the region began in the early 17th century, with Dutch and Swedish settlers establishing colonies. New Jersey played a crucial role in the American Revolutionary War and ratified the United States Constitution on December 18, 1787, becoming the third state. The state's history is marked by its diverse economy, including agriculture, industry, and commerce."
     },
     {
       "name": "New Mexico",
-      "information": ""
+      "foundation": "01/06/1912",
+      "capital": "Santa Fe",
+      "history": "New Mexico's history is rich and diverse, with indigenous peoples like the Pueblo, Navajo, and Apache tribes inhabiting the region for thousands of years. Spanish explorers arrived in the 16th century, establishing settlements and missions. New Mexico became the 47th state of the United States on January 6, 1912. The state's history is influenced by its multicultural heritage, including Native American, Hispanic, and Anglo-American cultures."
     },
     {
       "name": "New York",
-      "information": ""
+      "foundation": "07/26/1788",
+      "capital": "Albany",
+      "history": "New York's history is rich and varied, beginning with indigenous peoples like the Iroquois and Algonquin tribes. European exploration of the region began in the early 17th century, with Dutch and English settlers establishing colonies. New York played a crucial role in the American Revolutionary War and ratified the United States Constitution on July 26, 1788, becoming the 11th state. The state's history is marked by its cultural diversity, economic power, and status as a global center for finance, culture, and innovation."
     },
     {
       "name": "North Carolina",
-      "information": ""
+      "foundation": "11/21/1789",
+      "capital": "Raleigh",
+      "history": "North Carolina's history dates back to indigenous peoples like the Cherokee and Lumbee tribes. European exploration of the region began in the 16th century, with Spanish and English settlers establishing colonies. North Carolina played a significant role in the American Revolutionary War and ratified the United States Constitution on November 21, 1789, becoming the 12th state. The state's history is marked by its contributions to American agriculture, industry, and politics."
     },
     {
       "name": "North Dakota",
-      "information": ""
+      "foundation": "11/02/1889",
+      "capital": "Bismarck",
+      "history": "North Dakota's history is intertwined with the presence of indigenous peoples like the Dakota and Mandan tribes. European exploration of the region began in the 18th century, with fur traders and explorers venturing into the area. North Dakota became a territory of the United States in 1861 and achieved statehood on November 2, 1889. The state's history is marked by its agricultural heritage, including wheat farming and cattle ranching."
     },
     {
       "name": "Ohio",
-      "information": ""
+      "foundation": "03/01/1803",
+      "capital": "Columbus",
+      "history": "Ohio's history is rich and diverse, with indigenous peoples like the Shawnee and Miami tribes inhabiting the region for thousands of years. French explorers were among the first Europeans to explore the area in the 17th century, followed by British colonization. Ohio became the 17th state of the United States on March 1, 1803. The state played a significant role in the American Civil War and has been known for its industrialization, manufacturing, and contributions to aviation and space exploration."
     },
     {
       "name": "Oklahoma",
-      "information": ""
+      "foundation": "11/16/1907",
+      "capital": "Oklahoma City",
+      "history": "Oklahoma's history is shaped by indigenous peoples like the Choctaw, Cherokee, and Chickasaw tribes, who were forcibly relocated to the region in the 19th century. European exploration of the area began in the 16th century, with Spanish and French settlers establishing colonies. Oklahoma became the 46th state of the United States on November 16, 1907. The state's history is marked by its Native American heritage, oil industry, and agricultural economy."
     },
     {
       "name": "Oregon",
-      "information": ""
+      "foundation": "02/14/1859",
+      "capital": "Salem",
+      "history": "Oregon's history is rich and diverse, with indigenous peoples like the Chinook, Nez Perce, and Umpqua tribes inhabiting the region for thousands of years. European exploration of the area began in the 16th century, with Spanish and British explorers venturing into the area. Oregon became the 33rd state of the United States on February 14, 1859. The state's history is marked by its natural beauty, including forests, mountains, and coastline, as well as its role in westward expansion and environmental conservation."
     },
     {
       "name": "Pennsylvania",
-      "information": ""
+      "foundation": "12/12/1787",
+      "capital": "Harrisburg",
+      "history": "Pennsylvania's history is rich and diverse, beginning with indigenous peoples like the Lenape and Susquehannock tribes. European exploration of the region began in the early 17th century, with Dutch and English settlers establishing colonies. Pennsylvania played a crucial role in the American Revolutionary War and ratified the United States Constitution on December 12, 1787, becoming the second state. The state's history is marked by its contributions to American industry, democracy, and culture."
     },
     {
       "name": "Rhode Island",
-      "information": ""
+      "foundation": "05/29/1790",
+      "capital": "Providence",
+      "history": "Rhode Island's history dates back to indigenous peoples like the Narragansett and Wampanoag tribes. European exploration of the region began in the early 17th century, with Dutch and English settlers establishing colonies. Rhode Island played a crucial role in the American Revolutionary War and ratified the United States Constitution on May 29, 1790, becoming the 13th state. The state's history is marked by its maritime heritage, including shipbuilding, trade, and religious freedom."
     },
     {
       "name": "South Carolina",
-      "information": ""
+      "foundation": "05/23/1788",
+      "capital": "Columbia",
+      "history": "South Carolina's history dates back to indigenous peoples like the Cherokee and Catawba tribes. European exploration of the region began in the 16th century, with Spanish and French settlers establishing colonies. South Carolina played a significant role in the American Revolutionary War and ratified the United States Constitution on May 23, 1788, becoming the eighth state. The state's history is marked by its contributions to American agriculture, industry, and politics."
     },
     {
       "name": "South Dakota",
-      "information": ""
+      "foundation": "11/02/1889",
+      "capital": "Pierre",
+      "history": "South Dakota's history is intertwined with the presence of indigenous peoples like the Lakota and Dakota tribes. European exploration of the region began in the 18th century, with fur traders and explorers venturing into the area. South Dakota became a territory of the United States in 1861 and achieved statehood on November 2, 1889. The state's history is marked by its agricultural heritage, including farming and ranching."
     },
     {
       "name": "Tennessee",
-      "information": ""
+      "foundation": "06/01/1796",
+      "capital": "Nashville",
+      "history": "Tennessee's history dates back to indigenous peoples like the Cherokee and Chickasaw tribes. European exploration of the region began in the 16th century, with Spanish and French explorers venturing into the area. Tennessee became the 16th state of the United States on June 1, 1796. The state played a significant role in the Civil War and has been known for its contributions to American music, particularly country and blues. Tennessee also played a pivotal role in the women's suffrage movement, being the crucial 36th state to ratify the 19th Amendment to the U.S. Constitution, granting women the right to vote nationwide."
+    },
+    {
+      "name": "Tennessee",
+      "foundation": "06/01/1796",
+      "capital": "Nashville",
+      "history": "Tennessee's history dates back to indigenous peoples like the Cherokee and Chickasaw tribes. European exploration of the region began in the 16th century, with Spanish and French explorers venturing into the area. Tennessee became the 16th state of the United States on June 1, 1796. The state played a significant role in the Civil War and has been known for its contributions to American music, particularly country and blues."
     },
     {
       "name": "Texas",
-      "information": ""
+      "foundation": "12/29/1845",
+      "capital": "Austin",
+      "history": "Texas's history is rich and diverse, with indigenous peoples like the Caddo, Apache, and Comanche tribes inhabiting the region for thousands of years. Spanish explorers arrived in the 16th century, followed by Mexican and Anglo-American settlers. Texas declared its independence from Mexico in 1836 and became the 28th state of the United States on December 29, 1845. The state's history is marked by its ranching, oil, and technology industries, as well as its distinctive cultural identity."
     },
     {
       "name": "Utah",
-      "information": ""
+      "foundation": "01/04/1896",
+      "capital": "Salt Lake City",
+      "history": "Utah's history is shaped by indigenous peoples like the Ute, Paiute, and Shoshone tribes, who inhabited the region for thousands of years. Spanish explorers arrived in the 16th century, followed by Mormon pioneers in the 19th century. Utah became the 45th state of the United States on January 4, 1896. The state's history is influenced by its Mormon heritage, as well as its natural beauty and outdoor recreation opportunities."
     },
     {
       "name": "Vermont",
-      "information": ""
+      "foundation": "03/04/1791",
+      "capital": "Montpelier",
+      "history": "Vermont's history is marked by indigenous peoples like the Abenaki and Iroquois tribes, who inhabited the region for thousands of years. French explorers were among the first Europeans to explore the area in the 17th century, followed by British colonization. Vermont declared its independence from New York in 1777 and became the 14th state of the United States on March 4, 1791. The state's history is characterized by its rural landscape, maple syrup production, and progressive politics."
     },
     {
       "name": "Virginia",
-      "information": ""
+      "foundation": "06/25/1788",
+      "capital": "Richmond",
+      "history": "Virginia's history is rich and diverse, with indigenous peoples like the Powhatan and Cherokee tribes inhabiting the region for thousands of years. English settlers established the Jamestown colony in 1607, marking the first permanent English settlement in North America. Virginia played a crucial role in the American Revolutionary War and ratified the United States Constitution on June 25, 1788, becoming the 10th state. The state's history is marked by its contributions to American politics, culture, and economics."
     },
     {
       "name": "Washington",
-      "information": ""
+      "foundation": "11/11/1889",
+      "capital": "Olympia",
+      "history": "Washington's history is rich and diverse, with indigenous peoples like the Duwamish, Snoqualmie, and Yakama tribes inhabiting the region for thousands of years. Spanish explorers arrived in the 18th century, followed by British and American settlers. Washington became the 42nd state of the United States on November 11, 1889. The state's history is influenced by its maritime heritage, lumber industry, and technological innovation."
     },
     {
       "name": "West Virginia",
-      "information": ""
+      "foundation": "06/20/1863",
+      "capital": "Charleston",
+      "history": "West Virginia's history is intertwined with the presence of indigenous peoples like the Shawnee and Cherokee tribes. European exploration of the region began in the 17th century, with English settlers establishing colonies. West Virginia was formed during the American Civil War and admitted to the Union as a state on June 20, 1863, becoming the 35th state. The state's history is marked by its coal mining industry, Appalachian culture, and struggles for civil rights."
     },
     {
       "name": "Wisconsin",
-      "information": ""
+      "foundation": "05/29/1848",
+      "capital": "Madison",
+      "history": "Wisconsin's history is shaped by indigenous peoples like the Menominee, Ho-Chunk, and Ojibwe tribes, who inhabited the region for thousands of years. French explorers were among the first Europeans to explore the area in the 17th century, followed by British and American settlers. Wisconsin became the 30th state of the United States on May 29, 1848. The state's history is marked by its dairy farming industry, manufacturing, and progressive political traditions."
     },
     {
       "name": "Wyoming",
-      "information": ""
+      "foundation": "07/10/1890",
+      "capital": "Cheyenne",
+      "history": "Wyoming's history is intertwined with the presence of indigenous peoples like the Shoshone, Arapaho, and Cheyenne tribes. European exploration of the region began in the early 19th century, with fur traders and explorers venturing into the area. Wyoming became the 44th state of the United States on July 10, 1890. The state's history is marked by its role in the cattle industry, mining, and the conservation movement, as exemplified by Yellowstone National Park."
     }
   ]
 }

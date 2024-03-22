@@ -29,7 +29,7 @@
 <div class="flex flex-col">
     <div class="nav navbar bg-base-100">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl" href="index.php?map=true">US ELECTION</a>
+            <a class="btn btn-ghost text-xl" href="index.php">US ELECTION</a>
         </div>
         <div class="flex-none">
             <button class="btn btn-square btn-ghost">
