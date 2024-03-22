@@ -70,7 +70,19 @@
                 break;
             }
         }
-        $informazioni['winnerParties'] = \Model\ElectionRepository::getStateParties($_GET['state']);
+        $temp = \Model\ElectionRepository::getStateParties($_GET['state']);
+        $parties = [];
+        foreach ($temp as $party){
+            if (!isset($parties[$party['year']]))
+                $parties[$party['year']] = [];
+            $parties[$party['year']][$party['party']] = $party['votes'];
+        }
+        $path = 'data/data.json';
+        $jsonString = json_encode($parties, JSON_PRETTY_PRINT);
+        $fp = fopen($path, 'w');
+        fwrite($fp, $jsonString);
+        fclose($fp);
+
         echo $template->render('state', [
             'state'=>$informazioni
         ]);

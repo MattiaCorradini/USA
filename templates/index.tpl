@@ -17,7 +17,7 @@
         </div>
         <div class="flex-none">
             <button class="btn btn-square btn-ghost">
-                <a href="index.php?map=true"><img src="img/img_4.png" class="icon"></a>
+                <a href="index.php?map=true"><img src="./img/img_4.png" class="icon"></a>
             </button>
         </div>
     </div>
@@ -27,7 +27,7 @@
             <h1>US ELECTION</h1>
             <h3>The best elections database since 1976</h3>
         </div>
-        <a href="#next"><img src="img/img_3.png" class="icon"></a>
+        <a href="#next"><img src="./img/img_3.png" class="icon"></a>
     </div>
 
     <div class="section due" id="next">
@@ -60,7 +60,7 @@
                     </ul>
                 </div>
             </div>
-            <img src="/img/img.png">
+            <img src="./img/img.png">
         </div>
     </div>
 
@@ -135,7 +135,7 @@
     <div class="section due">
         <h1>Number of votes per state</h1>
         <div class="vote">
-            <img src="/img/img_2.png" class="foto">
+            <img src="./img/img_2.png" class="foto">
         </div>
         <a href="index.php?map=true">View map and infos of each elections since 1976</a>
     </div>
