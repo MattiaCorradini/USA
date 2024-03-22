@@ -22,6 +22,14 @@
             height: 480px;
             margin: 10px;
         }
+        .unselectable {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
     </style>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -44,13 +52,13 @@
                 <div  class="flex flex-col justify-between w-96 h-48"> <!-- class="flex flex-row justify-between w-96" -->
                     <div class="flex flex-row justify-between w-96">
                             <?php foreach ($election_votes as $a): ?>
-                            <span><?= $a['party_detailed'] == '' ? 'WRITEIN' : $a['party_detailed'] ?></span>
+                            <span><?= $a['party_simplified'] == '' ? 'WRITEIN' : $a['party_simplified'] ?></span>
                             <?php endforeach;?>
                     </div>
 
                     <div class="flex flex-row justify-between w-96">
                             <?php foreach ($percentage as $a): ?>
-                            <div class="radial-progress" style="--value: <?= $a ?>;" role="progressbar"> <?= $a ?>% </div>
+                            <div class="radial-progress unselectable" style="--value: <?= $a ?>;" role="progressbar"> <?= $a ?>% </div>
                             <?php endforeach;?>
                     </div>
 
@@ -64,7 +72,7 @@
                 </div>
                 <div class="grid grid-cols-4 gap-4">
                     <?php foreach ($years as $a): ?>
-                    <a href="index.php?map&year=<?= $a[0] ?>"><?= $a[0] ?></a>
+                    <a href="index.php?map&year=<?= $a[0] ?>" class="unselectable"><?= $a[0] ?></a>
                     <?php endforeach;?>
                 </div>
             </div>

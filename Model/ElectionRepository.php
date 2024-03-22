@@ -6,7 +6,7 @@ use Util\Connection;
 class ElectionRepository {
     public static function getParty($anno) {
         $pdo = Connection::getInstance();
-        $sql = 'SELECT party_detailed, s.name
+        $sql = 'SELECT party_simplified, s.name
                 FROM vote
                 INNER JOIN state as s
                 ON vote.id_state = s.id
@@ -40,15 +40,15 @@ class ElectionRepository {
 
     public static function getParties($year): array{
         $pdo = Connection::getInstance();
-        $sql = 'SELECT party_detailed, votes
-            FROM (SELECT party.party_detailed, SUM(vote.candidatevotes) as votes
+        $sql = 'SELECT party_simplified, votes
+            FROM (SELECT party.party_simplified, SUM(vote.candidatevotes) as votes
                   FROM vote
                            INNER JOIN party
                                       ON vote.id_party = party.id
                            INNER JOIN election
                                       ON vote.id_election = election.id
                   WHERE election.year = :year
-                  GROUP BY party.party_detailed) as a
+                  GROUP BY party.party_simplified) as a
             ORDER BY votes DESC
             LIMIT 2';
         $result = $pdo->prepare($sql);
@@ -81,7 +81,7 @@ class ElectionRepository {
                       ON vote.id_election = election.id
                       INNER JOIN party
                       ON vote.id_party = party.id
-                      WHERE year = :year AND party_detailed != \'REPUBLICAN\' AND party_detailed != \'DEMOCRAT\')  as A';
+                      WHERE year = :year AND party_simplified != \'REPUBLICAN\' AND party_simplified != \'DEMOCRAT\')  as A';
         $result = $pdo->prepare($sql);
         $result->execute([
             'year'=>$year
@@ -118,7 +118,7 @@ class ElectionRepository {
 
     public static function getStateParties($state){
         $pdo = Connection::getInstance();
-        $sql = 'SELECT party_detailed AS party, year, candidatevotes AS votes
+        $sql = 'SELECT party_simplified AS party, year, candidatevotes AS votes
                 FROM vote
                 INNER JOIN state
                 ON vote.id_state = state.id
@@ -126,7 +126,7 @@ class ElectionRepository {
                 ON vote.id_election = e.id
                 INNER JOIN party
                 ON vote.id_party = party.id
-                WHERE state.name = :state AND (party_detailed = \'REPUBLICAN\' OR party_detailed = \'DEMOCRAT\');';
+                WHERE state.name = :state AND (party_simplified = \'REPUBLICAN\' OR party_simplified = \'DEMOCRAT\');';
         $result = $pdo->prepare($sql);
         $result->execute([
             'state'=>$state

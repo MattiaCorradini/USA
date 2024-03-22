@@ -13,27 +13,28 @@ fetch('./data/data.json')
             republican_values.push(-data[year]['REPUBLICAN']);
         }
         let options = {
-            series: [{
-                name: 'Democrat',
-                data: democrat_values,
-                style: {
-                    color: '#97b6cd' // Text color for x-axis labels
+            series: [
+                {
+                    name: 'Republican',
+                    data: republican_values,
+                    style: {
+                        color: '#97b6cd' // Text color for x-axis labels
+                    }
+                },
+                {
+                    name: 'Democrat',
+                    data: democrat_values,
+                    style: {
+                        color: '#97b6cd' // Text color for x-axis labels
+                    }
                 }
-            },
-            {
-                name: 'Republican',
-                data: republican_values,
-                style: {
-                    color: '#97b6cd' // Text color for x-axis labels
-                }
-            }
             ],
             chart: {
                 type: 'bar',
                 height: 440,
                 stacked: true
             },
-            colors: ['#008FFB', '#FF4560'],
+            colors: ['#FF4560', '#008FFB'],
             plotOptions: {
                 bar: {
                     horizontal: true,
@@ -80,8 +81,9 @@ fetch('./data/data.json')
             title: {
                 text: 'Votes in all elections',
                 style: {
-                    color: '#97b6cd' // Text color for x-axis labels
-                }
+                    color: '#97b6cd'
+                },
+                align: 'center'
             },
             xaxis: {
                 categories: years,

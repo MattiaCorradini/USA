@@ -26,7 +26,7 @@
         $republicans = [];
         $democrats = [];
         foreach ($data as $state){
-            if ($state['party_detailed'] == 'REPUBLICAN')
+            if ($state['party_simplified'] == 'REPUBLICAN')
                 $republicans[] = $state['name'];
             else
                 $democrats[] = $state['name'];
@@ -42,7 +42,7 @@
         fclose($fp);
         $years = \Model\ElectionRepository::getYears();
         $election_votes = \Model\ElectionRepository::getParties($year);
-        $election_votes[] = ['party_detailed'=>'OTHER', 'votes'=>\Model\ElectionRepository::getOtherVotes($year)[0][0]];
+        $election_votes[] = ['party_simplified'=>'OTHER', 'votes'=>\Model\ElectionRepository::getOtherVotes($year)[0][0]];
         $totalvotes = \Model\ElectionRepository::getVotes($year)[0][0];
         $percentage = [];
         foreach ($election_votes as $vote){

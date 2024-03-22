@@ -31,6 +31,34 @@
     </div>
 
     <div class="section due" id="next">
+        <h1>Branches of Government</h1>
+        <div class="overflow-x-auto">
+            <table class="table-lg table-zebra">
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Executive</td>
+                    <td>The president, elected every 4 years</td>
+                </tr>
+                <tr>
+                    <td>Judicial</td>
+                    <td>Supreme Court, 9 justices, who are chosen by the president</td>
+                </tr>
+                <tr>
+                    <td>Legislative</td>
+                    <td>Senate and House of Representatives elected every 6 and 2 years, respectively</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section due bianco">
         <h1>The parties</h1>
         <div class="parties">
             <div role="tablist" class="tabs tabs-bordered">
@@ -39,9 +67,9 @@
                     <p><strong>Republican Party:</strong></p>
                     <ul>
                         <li>Founded in 1854, GOP has shaped American politics for over a century.</li>
-                        <li>Notable presidents: Richard Nixon, Ronald Reagan, George W. Bush, Donald Trump.</li>
-                        <li>Ideologies: conservative principles, limited government intervention, strong military stance.</li>
-                        <li>Current ideologies: increased military spending, anti-immigration, individualism, less government
+                        <li><i>Notable presidents</i>: Richard Nixon, Ronald Reagan, George W. Bush, Donald Trump.</li>
+                        <li><i>Ideologies</i>: conservative principles, limited government intervention, strong military stance.</li>
+                        <li><i>Current ideologies</i>: increased military spending, anti-immigration, individualism, less government
                             intervention, traditional values.</li>
                     </ul>
                 </div>
@@ -51,12 +79,22 @@
                     <p><strong>Democratic Party:</strong></p>
                     <ul>
                         <li>Founded in 1828, cornerstone of American politics.</li>
-                        <li>Notable presidents: Franklin D. Roosevelt, John F. Kennedy, Jimmy Carter, Bill Clinton, Barack
+                        <li><i>Notable presidents</i>: Franklin D. Roosevelt, John F. Kennedy, Jimmy Carter, Bill Clinton, Barack
                             Obama.
                         </li>
-                        <li>Ideologies: progressive values, social justice, environmental protection, economic equality.</li>
-                        <li>Current ideologies: social justice, gun control, environmental protection, healthcare for all,
+                        <li><i>Ideologies</i>: progressive values, social justice, environmental protection, economic equality.</li>
+                        <li><i>Current ideologies</i>: social justice, gun control, environmental protection, healthcare for all,
                             reducing economic inequality.</li>
+                    </ul>
+                </div>
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Third&nbsp;Parties" data-tab="3" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+                    <p><strong>Third Parties:</strong></p>
+                    <ul>
+                        <li><i>Green Party</i>: abolition of the death penalty, repeal of three-strikes laws, banning of private prisons, legalization of marijuana, and decriminalization of other drugs</li>
+                        <li><i>Constitution</i>: laws should be restored to what the party claims is its "Biblical foundations". It has been described by its critics as a theocratic party, as with its predecessor</li>
+                        <li><i>Libertarian</i>: individual liberty in personal and economic affairs, avoidance of "foreign entanglements" and military and economic intervention in other nations' affairs, and free trade and migration,  opposes gun control.</li>
                     </ul>
                 </div>
             </div>
@@ -64,7 +102,7 @@
         </div>
     </div>
 
-    <div class="section due bianco">
+    <div class="section due">
         <h1>Election year timeline</h1>
 
         <div class="time-line">
@@ -132,12 +170,12 @@
         </div>
     </div>
 
-    <div class="section due">
+    <div class="section due bianco">
         <h1>Number of votes per state</h1>
         <div class="vote">
             <img src="./img/img_2.png" class="foto">
         </div>
-        <a href="index.php?map=true">View map and infos of each elections since 1976</a>
+        <a href="index.php?map=true">View map and information of each elections since 1976</a>
     </div>
 
 </div>
