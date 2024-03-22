@@ -60,7 +60,7 @@
     else if (isset($_GET['state'])){
         $json_string = file_get_contents('data/info.json');
         $data = json_decode($json_string, true);
-        $informazioni[] = "";
+        $informazioni = [];
         foreach ($data['features'] as $feature) {
             if ($feature['name'] === $_GET['state']) {
                 $informazioni['name'] = $feature['name'];
@@ -70,6 +70,7 @@
                 break;
             }
         }
+        $informazioni['winnerParties'] = \Model\ElectionRepository::getStateParties($_GET['state']);
         echo $template->render('state', [
             'state'=>$informazioni
         ]);

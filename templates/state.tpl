@@ -13,6 +13,9 @@
 <p>Founded in: <?= $state['ist'] ?></p>
 <p>Capital: <?= $state['cap'] ?></p>
 <p>History: <?= $state['sto'] ?></p><br>
+<?php foreach($state['winnerParties'] as $party): ?>
+    <p><?= $party['year'] ?>: <?= $party['party_detailed'] ?></p>
+<?php endforeach; ?>
 <a href="index.php?map">MAP</a>
 </body>
 </html>

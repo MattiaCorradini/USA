@@ -50,12 +50,28 @@ let democratsStyle = {
 //     });
 
 // Aggiungi un gestore di eventi clic per i poligoni
+
+let bottomleft = document.getElementsByClassName("leaflet-bottom leaflet-left");
+for (let div of bottomleft){
+    let text = document.createElement('p');
+    text.id = "stateText";
+    text.className = "text-slate-700 text-lg pl-4"
+    div.appendChild(text);
+}
+
 function onEachFeature(feature, layer) {
     layer.on('click', function (e) {
         window.location.replace(`index.php?state=${feature.properties.name}`);
     });
     layer.on('mouseover', function (a){
-        layer.bindPopup(feature.properties.name).openPopup();
+        // layer.bindPopup(feature.properties.name).openPopup();
+        let stateText = document.getElementById('stateText');
+        stateText.textContent = feature.properties.name;
+    });
+    layer.on('mouseout', function (a){
+        // layer.bindPopup(feature.properties.name).openPopup();
+        let stateText = document.getElementById('stateText');
+        stateText.textContent = "";
     });
 }
 

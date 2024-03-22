@@ -76,4 +76,19 @@ class ElectionRepository {
         ]);
         return $result->fetchAll();
     }
+
+    public static function getStateParties($state){
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT year, party_detailed
+                FROM party INNER JOIN vote ON id_party = party.id
+                           INNER JOIN state ON id_state = state.id
+                           INNER JOIN election ON id_election = election.id
+                WHERE state.name = :state
+                GROUP BY year;';
+        $result = $pdo->prepare($sql);
+        $result->execute([
+            'state'=>$state
+        ]);
+        return $result->fetchAll();
+    }
 }
