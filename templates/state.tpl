@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="sunset">
+<html lang="en" data-theme="corporate">
 <head>
     <meta charset="UTF-8">
     <title><?= $state['name'] ?></title>

@@ -33,9 +33,9 @@ h1 {
     justify-content: flex-end;
 }
 
-.bianco {
-    background-color: #000919;
-}
+/*.bianco {*/
+/*    background-color: rgba(246, 244, 255, 0.85);*/
+/*}*/
 
 .due {
     display: flex;
