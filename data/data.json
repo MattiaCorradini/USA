@@ -1,50 +1,57 @@
 {
-    "1976": {
-        "DEMOCRAT": "137818",
-        "REPUBLICAN": "27873"
-    },
-    "1980": {
-        "DEMOCRAT": "130231",
-        "REPUBLICAN": "23313"
-    },
-    "1984": {
-        "DEMOCRAT": "180408",
-        "REPUBLICAN": "29009"
-    },
-    "1988": {
-        "DEMOCRAT": "159407",
-        "REPUBLICAN": "27590"
-    },
-    "1992": {
-        "DEMOCRAT": "192619",
-        "REPUBLICAN": "20698"
-    },
-    "1996": {
-        "DEMOCRAT": "158220",
-        "REPUBLICAN": "17339"
-    },
-    "2000": {
-        "DEMOCRAT": "171923",
-        "REPUBLICAN": "18073"
-    },
-    "2004": {
-        "DEMOCRAT": "202970",
-        "REPUBLICAN": "21256"
-    },
-    "2008": {
-        "DEMOCRAT": "245800",
-        "REPUBLICAN": "17367"
-    },
-    "2012": {
-        "DEMOCRAT": "267070",
-        "REPUBLICAN": "21381"
-    },
-    "2016": {
-        "DEMOCRAT": "282830",
-        "REPUBLICAN": "12723"
-    },
-    "2020": {
-        "DEMOCRAT": "317323",
-        "REPUBLICAN": "18586"
-    }
+    "republicans": [
+        "ALABAMA",
+        "ALASKA",
+        "ARIZONA",
+        "ARKANSAS",
+        "CALIFORNIA",
+        "COLORADO",
+        "CONNECTICUT",
+        "DELAWARE",
+        "FLORIDA",
+        "GEORGIA",
+        "IDAHO",
+        "ILLINOIS",
+        "INDIANA",
+        "KANSAS",
+        "KENTUCKY",
+        "LOUISIANA",
+        "MAINE",
+        "MARYLAND",
+        "MICHIGAN",
+        "MISSISSIPPI",
+        "MISSOURI",
+        "MONTANA",
+        "NEBRASKA",
+        "NEVADA",
+        "NEW HAMPSHIRE",
+        "NEW JERSEY",
+        "NEW MEXICO",
+        "NORTH CAROLINA",
+        "NORTH DAKOTA",
+        "OHIO",
+        "OKLAHOMA",
+        "PENNSYLVANIA",
+        "SOUTH CAROLINA",
+        "SOUTH DAKOTA",
+        "TENNESSEE",
+        "TEXAS",
+        "UTAH",
+        "VERMONT",
+        "VIRGINIA",
+        "WYOMING"
+    ],
+    "democrats": [
+        "DISTRICT OF COLUMBIA",
+        "HAWAII",
+        "IOWA",
+        "MASSACHUSETTS",
+        "MINNESOTA",
+        "NEW YORK",
+        "OREGON",
+        "RHODE ISLAND",
+        "WASHINGTON",
+        "WEST VIRGINIA",
+        "WISCONSIN"
+    ]
 }

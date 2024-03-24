@@ -18,14 +18,14 @@ fetch('./data/data.json')
                     name: 'Republican',
                     data: republican_values,
                     style: {
-                        color: '#97b6cd' // Text color for x-axis labels
+                        color: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000' // Text color for x-axis labels
                     }
                 },
                 {
                     name: 'Democrat',
                     data: democrat_values,
                     style: {
-                        color: '#97b6cd' // Text color for x-axis labels
+                        color: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000' // Text color for x-axis labels
                     }
                 }
             ],
@@ -61,7 +61,7 @@ fetch('./data/data.json')
                 max: Math.max(-Math.min(...republican_values), Math.max(...democrat_values)) * 1.1,
                 labels: {
                     style: {
-                        colors: '#97b6cd' // Text color for y-axis labels
+                        colors: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000' // Text color for y-axis labels
                     }
                 }
             },
@@ -81,7 +81,7 @@ fetch('./data/data.json')
             title: {
                 text: 'Votes in all elections',
                 style: {
-                    color: '#97b6cd'
+                    color: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000'
                 },
                 align: 'center'
             },
@@ -90,7 +90,7 @@ fetch('./data/data.json')
                 title: {
                     text: 'Votes',
                     style: {
-                        color: '#97b6cd' // Text color for x-axis labels
+                        color: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000' // Text color for x-axis labels
                     }
                 },
                 labels: {
@@ -98,16 +98,20 @@ fetch('./data/data.json')
                         return Math.abs(Math.round(val))
                     },
                     style: {
-                        colors: '#97b6cd' // Text color for x-axis labels
+                        colors: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000' // Text color for x-axis labels
                     }
                 }
             },
             legend: {
                 labels: {
-                    colors: '#97b6cd' // Text color for legend names
+                    colors: localStorage.getItem("theme") == "light" ? '#97b6cd' : '#000' // Text color for legend names
                 }
             }
         };
         let chart = new ApexCharts(document.querySelector("#chart"), options);
         chart.render();
     })
+
+// if(localStorage.getItem("theme") == "light"){
+//     options[]
+// }

@@ -12,4 +12,6 @@ theme.addEventListener("click", (event) => {
         localStorage.setItem("theme", "sunset")
     else
         localStorage.setItem("theme", "light")
+
+    location.reload()
 })
