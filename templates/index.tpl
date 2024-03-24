@@ -31,7 +31,7 @@
                 </label>
             </div>
             <div>
-                <button class="btn btn-square btn-ghost">
+                <button class="btn btn-square btn-link">
                     <a href="index.php?map=true"><img src="./img/img_4.png" class="icon"></a>
                 </button>
             </div>
