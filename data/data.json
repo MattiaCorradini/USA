@@ -1,57 +1,50 @@
 {
-    "republicans": [
-        "ALASKA",
-        "ARIZONA",
-        "CALIFORNIA",
-        "COLORADO",
-        "CONNECTICUT",
-        "IDAHO",
-        "ILLINOIS",
-        "INDIANA",
-        "IOWA",
-        "KANSAS",
-        "MAINE",
-        "MICHIGAN",
-        "MONTANA",
-        "NEBRASKA",
-        "NEVADA",
-        "NEW HAMPSHIRE",
-        "NEW JERSEY",
-        "NEW MEXICO",
-        "NORTH DAKOTA",
-        "OKLAHOMA",
-        "OREGON",
-        "SOUTH DAKOTA",
-        "UTAH",
-        "VERMONT",
-        "VIRGINIA",
-        "WASHINGTON",
-        "WYOMING"
-    ],
-    "democrats": [
-        "ALABAMA",
-        "ARKANSAS",
-        "DELAWARE",
-        "DISTRICT OF COLUMBIA",
-        "FLORIDA",
-        "GEORGIA",
-        "HAWAII",
-        "KENTUCKY",
-        "LOUISIANA",
-        "MARYLAND",
-        "MASSACHUSETTS",
-        "MINNESOTA",
-        "MISSISSIPPI",
-        "MISSOURI",
-        "NEW YORK",
-        "NORTH CAROLINA",
-        "OHIO",
-        "PENNSYLVANIA",
-        "RHODE ISLAND",
-        "SOUTH CAROLINA",
-        "TENNESSEE",
-        "TEXAS",
-        "WEST VIRGINIA",
-        "WISCONSIN"
-    ]
+    "1976": {
+        "DEMOCRAT": 998387,
+        "REPUBLICAN": 927443
+    },
+    "1980": {
+        "REPUBLICAN": 1074181,
+        "DEMOCRAT": 931182
+    },
+    "1984": {
+        "REPUBLICAN": 1274188,
+        "DEMOCRAT": 848583
+    },
+    "1988": {
+        "REPUBLICAN": 1084953,
+        "DEMOCRAT": 1001619
+    },
+    "1992": {
+        "DEMOCRAT": 1053873,
+        "REPUBLICAN": 811159
+    },
+    "1996": {
+        "DEMOCRAT": 1025935,
+        "REPUBLICAN": 890016
+    },
+    "2000": {
+        "REPUBLICAN": 1189924,
+        "DEMOCRAT": 1111138
+    },
+    "2004": {
+        "REPUBLICAN": 1455713,
+        "DEMOCRAT": 1259171
+    },
+    "2008": {
+        "REPUBLICAN": 1445814,
+        "DEMOCRAT": 1441911
+    },
+    "2012": {
+        "REPUBLICAN": 1482440,
+        "DEMOCRAT": 1223796
+    },
+    "2016": {
+        "REPUBLICAN": 1594511,
+        "DEMOCRAT": 1071068
+    },
+    "2020": {
+        "REPUBLICAN": 1718736,
+        "DEMOCRAT": 1253014
+    }
 }

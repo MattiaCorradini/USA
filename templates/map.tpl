@@ -37,7 +37,7 @@
 <div class="flex flex-col">
     <div class="nav navbar glass z-40" style=" background-image: none; ">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl" href="index.php">US ELECTION</a>
+            <a class="btn btn-ghost text-xl" href="index.php">US ELECTIONS</a>
         </div>
         <div class="flex justify-between w-28">
             <div>
@@ -63,7 +63,7 @@
 
     </div>
     <div class="cont">
-        <h1><?= $year ?> Election</h1>
+        <h1 class="text-3xl"><?= $year ?> Election</h1>
         <div class="flex justify-evenly">
             <div class="flex flex-col justify-between">
                 <div  class="flex flex-col justify-between w-96 h-64 text-xl"> <!-- class="flex flex-row justify-between w-96" -->

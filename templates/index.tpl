@@ -13,7 +13,7 @@
 <div class="all">
     <div class="nav navbar fixed glass z-40" style=" background-image: none; ">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl" href="index.php">US ELECTION</a>
+            <a class="btn btn-ghost text-xl" href="index.php">US ELECTIONS</a>
         </div>
         <div class="flex justify-between w-28">
             <div>
@@ -41,7 +41,7 @@
 
     <div class="section uno bg-base-200" id="home">
         <div class="title">
-            <h1 class="text-5xl">US ELECTION</h1>
+            <h1 class="text-5xl">US ELECTIONS</h1>
             <h3 class="text-xl">A Corradini, Scarsato & Vacca work of art</h3>
         </div>
         <a href="#next"><img src="./img/img_3.png" class="icon"></a>
@@ -49,7 +49,7 @@
 
     <div class="section due" id="next">
         <div class="flex flex-col justify-between items-center h-96">
-            <h1>Branches of Government</h1>
+            <h1 class="text-3xl">Branches of Government</h1>
             <div class="overflow-x-auto">
                 <table class="table-lg table-zebra">
                     <thead>
@@ -78,7 +78,7 @@
     </div>
 
     <div class="section due bg-base-200">
-        <h1>The parties</h1>
+        <h1 class="text-3xl">The parties</h1>
         <div class="parties">
             <div role="tablist" class="tabs tabs-bordered ">
                 <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Republican" data-tab="1" checked />
@@ -122,7 +122,7 @@
     </div>
 
     <div class="section due">
-        <h1>Election year timeline</h1>
+        <h1 class="text-3xl">Election year timeline</h1>
 
         <div class="time-line">
             <!--<div class="event"><h2>January-June</h2>
@@ -190,7 +190,7 @@
     </div>
 
     <div class="section due bg-base-200">
-        <h1>Number of votes per state</h1>
+        <h1 class="text-3xl">Number of votes per state</h1>
         <div class="vote">
             <img src="./img/img_2.png" class="foto">
         </div>

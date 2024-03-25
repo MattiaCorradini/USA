@@ -12,7 +12,7 @@
 <div>
     <div class="nav navbar fixed glass z-40" style=" background-image: none; ">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl" href="index.php">US ELECTION</a>
+            <a class="btn btn-ghost text-xl" href="index.php">US ELECTIONS</a>
         </div>
         <div class="flex justify-between w-28">
             <div>
@@ -37,9 +37,9 @@
         </div>
 
     </div>
-    <div class="section p-20 flex flex-col justify-between">
-        <h1>State of <?= $state['name'] ?></h1>
-        <div class="flex flex-row items-center justify-around pt-10">
+    <div class="section pt-20 flex flex-col justify-between">
+        <h1 class="text-3xl">State of <?= $state['name'] ?></h1>
+        <div class=" p-20 flex flex-row items-center justify-around pt-10">
             <img src="state_flags/<?=$state['name']?>.png" alt="" style="width: 400px; height: auto;">
             <div class="text-lg">
                 <p>Founded in: <?= $state['ist'] ?></p>
@@ -47,15 +47,18 @@
             </div>
 
         </div>
-        <div class="flex flex-row items-center justify-around pt-10">
+        <div class=" p-20 flex flex-row items-center justify-around pt-10">
             <p class="text-lg pr-20">History: <?= $state['sto'] ?></p><br>
             <img src="state_map/<?=$state['name']?>.png" alt="" style="width: 400px; height: auto;">
         </div>
+        <div class="flex items-center">
+            <div id="chart" class="w-screen"></div>
+        </div>
 
     </div>
-    <div class="section flex items-center p-1">
-        <div id="chart" class="w-screen"></div>
-    </div>
+    <!--<div class="section flex items-center pt-20">
+
+    </div>-->
 </div>
 
 <script src="./scripts/state.js"></script>
