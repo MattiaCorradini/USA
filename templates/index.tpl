@@ -41,8 +41,8 @@
 
     <div class="section uno bg-base-200" id="home">
         <div class="title">
-            <h1>US ELECTION</h1>
-            <h3>The best elections database since 1976</h3>
+            <h1 class="text-5xl">US ELECTION</h1>
+            <h3 class="text-xl">A Corradini, Scarsato & Vacca work of art</h3>
         </div>
         <a href="#next"><img src="./img/img_3.png" class="icon"></a>
     </div>
@@ -194,7 +194,7 @@
         <div class="vote">
             <img src="./img/img_2.png" class="foto">
         </div>
-        <a href="index.php?map=true">View map and information of each elections since 1976</a>
+        <a href="index.php?map=true" class="link">View map and information of each elections since 1976</a>
     </div>
 
 </div>

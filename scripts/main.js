@@ -51,11 +51,11 @@ let democratsStyle = {
 
 // Aggiungi un gestore di eventi clic per i poligoni
 
-let bottomleft = document.getElementsByClassName("leaflet-bottom leaflet-left");
+let bottomleft = document.getElementsByClassName("pene");
 for (let div of bottomleft){
     let text = document.createElement('p');
     text.id = "stateText";
-    text.className = "text-slate-700 text-lg pl-4"
+    text.className = "text-xl pl-4"
     div.appendChild(text);
 }
 

@@ -16,7 +16,6 @@ a {
 
 h1 {
     font-family: "Leelawadee UI";
-    font-size: 2rem !important;
     font-weight: bolder !important;
     text-align: center;
 }
@@ -45,11 +44,11 @@ h1 {
 
 .title {
     display: flex;
-    /* padding-bottom: 15%; */
+    padding-bottom: 15%;
     flex-direction: column;
-    justify-content: center;
-    height: 90vh;
-    font-size: 2rem ;
+    justify-content: space-around;
+    height: 45vh;
+    font-size: 2rem;
 
 }
 

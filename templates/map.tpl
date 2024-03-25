@@ -66,7 +66,7 @@
         <h1><?= $year ?> Election</h1>
         <div class="flex justify-evenly">
             <div class="flex flex-col justify-between">
-                <div  class="flex flex-col justify-between w-96 h-48"> <!-- class="flex flex-row justify-between w-96" -->
+                <div  class="flex flex-col justify-between w-96 h-64 text-xl"> <!-- class="flex flex-row justify-between w-96" -->
                     <div class="flex flex-row justify-between w-96">
                             <?php foreach ($election_votes as $a): ?>
                             <span><?= $a['party_simplified'] == '' ? 'WRITEIN' : $a['party_simplified'] ?></span>
@@ -89,13 +89,16 @@
                 </div>
                 <div class="grid grid-cols-4 gap-4">
                     <?php foreach ($years as $a): ?>
+                    <button class="btn btn-ghost">
                     <a href="index.php?map&year=<?= $a[0] ?>" class="unselectable"><?= $a[0] ?></a>
+                    </button>
                     <?php endforeach;?>
                 </div>
             </div>
+                <div id="map"></div>
 
-            <div id="map"></div>
         </div>
+        <div class="flex pene w-10/12 justify-center"></div>
     </div>
 </div>
 <script src="scripts/main.js"></script>
